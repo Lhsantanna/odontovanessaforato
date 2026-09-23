@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Vanessa Forato Ferraz | Dentista em Socorro - SP</title>
-    <!-- Tailwind CSS via CDN para funcionar direto no GitHub sem builds complexos -->
+    <meta name="description" content="Dra. Vanessa Forato Ferraz, cirurgiã-dentista em Socorro - SP, com atuação em Invisalign e estética dental. Agende sua avaliação.">
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
+                        deep: '#12232E',
+                        'deep-foreground': '#FFFFFF',
                         gold: '#d97706',
                     }
                 }
@@ -21,93 +24,285 @@
 <body class="min-h-screen bg-slate-50 text-slate-900 font-sans">
 
     <!-- HEADER -->
-    <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#12232E]/90 backdrop-blur-md">
         <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 lg:px-8">
             <a href="#inicio" class="leading-tight">
-                <span class="block font-serif text-lg text-slate-900 font-bold">Dra. Vanessa Forato</span>
-                <span class="block text-[0.65rem] font-medium tracking-[0.22em] uppercase text-amber-600">Cirurgiã-Dentista</span>
+                <span class="block font-serif text-lg text-white">Dra. Vanessa Forato</span>
+                <span class="block text-[0.65rem] font-medium tracking-[0.22em] uppercase text-amber-500">Cirurgiã-Dentista</span>
             </a>
             <nav class="hidden items-center gap-7 lg:flex">
-                <a href="#inicio" class="text-sm text-slate-600 transition-colors hover:text-amber-600 font-medium">Início</a>
-                <a href="#invisalign" class="text-sm text-slate-600 transition-colors hover:text-amber-600 font-medium">Invisalign</a>
-                <a href="#estetica" class="text-sm text-slate-600 transition-colors hover:text-amber-600 font-medium">Estética Dental</a>
-                <a href="#sobre" class="text-sm text-slate-600 transition-colors hover:text-amber-600 font-medium">Sobre</a>
-                <a href="#localizacao" class="text-sm text-slate-600 transition-colors hover:text-amber-600 font-medium">Localização</a>
+                <a href="#inicio" class="text-sm text-white/75 transition-colors hover:text-amber-500">Início</a>
+                <a href="#invisalign" class="text-sm text-white/75 transition-colors hover:text-amber-500">Invisalign</a>
+                <a href="#estetica" class="text-sm text-white/75 transition-colors hover:text-amber-500">Estética Dental</a>
+                <a href="#sobre" class="text-sm text-white/75 transition-colors hover:text-amber-500">Sobre</a>
+                <a href="#avaliacoes" class="text-sm text-white/75 transition-colors hover:text-amber-500">Avaliações</a>
+                <a href="#localizacao" class="text-sm text-white/75 transition-colors hover:text-amber-500">Localização</a>
             </nav>
-            <a href="https://wa.me/5519997041629?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="hidden lg:inline-flex bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition">
+            <a href="https://wa.me/5519997041629?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="hidden lg:inline-flex bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md transition">
                 Agendar Avaliação
             </a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section id="inicio" class="relative overflow-hidden pt-32 pb-20 bg-slate-900 text-white lg:py-36">
+    <section id="inicio" class="relative overflow-hidden pt-32 pb-20 bg-[#12232E] text-white lg:py-32">
         <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
-            <div class="space-y-6">
-                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
-                    Atendimento em Socorro - SP
+            <div>
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-500">
+                    <span class="h-px w-8 bg-amber-500"></span> Atendimento em Socorro - SP
                 </span>
-                <h1 class="font-serif text-4xl leading-[1.12] sm:text-5xl lg:text-[3.4rem]">
-                    Um sorriso mais alinhado, natural e <span class="text-amber-400">confiante</span> começa com um planejamento personalizado.
+                <h1 class="mt-6 font-serif text-4xl leading-[1.12] sm:text-5xl lg:text-[3.4rem]">
+                    Um sorriso mais alinhado, natural e <span class="text-amber-500">confiante</span> começa com um planejamento personalizado.
                 </h1>
-                <p class="text-base leading-relaxed text-slate-300 max-w-xl">
+                <p class="mt-6 max-w-xl text-base leading-relaxed text-white/70">
                     Atendimento odontológico com foco em Invisalign e estética dental em Socorro - SP, conduzido pela Dra. Vanessa Forato Ferraz.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="https://wa.me/5519997041629?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg transition text-center">
+                <div class="mt-9 flex flex-wrap gap-3">
+                    <a href="https://wa.me/5519997041629?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-xl font-semibold transition">
                         Agendar Avaliação
                     </a>
-                    <a href="#sobre" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-semibold border border-white/10 transition text-center">
+                    <a href="#sobre" class="border border-white/20 hover:bg-white/10 text-white px-6 py-3 rounded-xl font-semibold transition">
                         Conhecer o Trabalho
                     </a>
                 </div>
+                <div class="mt-10 flex items-center gap-4">
+                    <div class="flex text-amber-500">★★★★★</div>
+                    <p class="text-sm text-white/70">
+                        <strong class="text-white">5,0 no Google</strong> • 20 avaliações
+                    </p>
+                </div>
             </div>
-            <div class="relative h-[420px] lg:h-[480px] rounded-3xl overflow-hidden border-2 border-amber-500/30 shadow-2xl bg-slate-800 flex items-center justify-center">
-                <span class="text-slate-400 text-sm">Dra. Vanessa Forato Ferraz</span>
+            <div class="rounded-2xl border-2 border-amber-500/30 overflow-hidden shadow-2xl bg-slate-800 h-[450px]">
+                <img src="https://images.unsplash.com/photo-1594824813567-540f2979e2f9?auto=format&fit=crop&w=800&q=80" alt="Dra. Vanessa Forato Ferraz" class="h-full w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- CUIDADO INDIVIDUALIZADO -->
+    <section class="py-20 bg-white">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
+            <div class="rounded-2xl border-2 border-amber-500/30 overflow-hidden shadow-xl h-[400px]">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Sorriso natural e planejado" class="h-full w-full object-cover">
+            </div>
+            <div>
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-600">Cuidado Individualizado</span>
+                <h2 class="mt-5 font-serif text-3xl leading-tight text-slate-900 sm:text-4xl">
+                    Seu sorriso merece ser planejado para você
+                </h2>
+                <p class="mt-6 leading-relaxed text-slate-600">
+                    Cada traço, proporção e detalhe do seu sorriso é avaliado com precisão e sensibilidade. A odontologia moderna vai além do tratamento clínico: envolve planejamento, cuidado e atenção individual.
+                </p>
+                <a href="https://wa.me/5519997041629" target="_blank" class="inline-flex items-center gap-2 mt-8 text-amber-600 font-semibold hover:underline">
+                    Quero conversar sobre meu sorriso →
+                </a>
             </div>
         </div>
     </section>
 
     <!-- INVISALIGN -->
-    <section id="invisalign" class="py-24 bg-white">
+    <section id="invisalign" class="py-20 bg-[#12232E] text-white">
         <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
-            <div class="space-y-6">
-                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-600">Invisalign Doctor</span>
-                <h2 class="font-serif text-3xl leading-tight text-slate-900 sm:text-4xl">
+            <div>
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-500">Invisalign Doctor</span>
+                <h2 class="mt-5 font-serif text-3xl leading-tight sm:text-4xl">
                     Invisalign: alinhamento com discrição
                 </h2>
-                <p class="leading-relaxed text-slate-600">
+                <p class="mt-6 leading-relaxed text-white/70">
                     Os alinhadores transparentes são uma alternativa moderna para determinados casos de tratamento ortodôntico. O planejamento é individualizado e realizado de acordo com a avaliação clínica de cada paciente.
                 </p>
-                <ul class="space-y-4 pt-2">
+                <ul class="mt-8 space-y-4">
                     <li class="flex items-start gap-3">
-                        <span class="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-600 font-bold text-xs">✓</span>
-                        <span class="text-sm text-slate-700">Alinhadores transparentes e removíveis</span>
+                        <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-400">✓</span>
+                        <span class="text-sm text-white/80">Alinhadores transparentes e removíveis</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-600 font-bold text-xs">✓</span>
-                        <span class="text-sm text-slate-700">Planejamento digital individualizado</span>
+                        <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-400">✓</span>
+                        <span class="text-sm text-white/80">Planejamento digital individualizado</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-600 font-bold text-xs">✓</span>
-                        <span class="text-sm text-slate-700">Mais praticidade para rotina e higienização</span>
+                        <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-amber-400">✓</span>
+                        <span class="text-sm text-white/80">Mais praticidade para rotina e higienização</span>
                     </li>
                 </ul>
+                <a href="https://wa.me/5519997041629" target="_blank" class="mt-9 inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-xl font-semibold transition">
+                    Saiba mais sobre Invisalign
+                </a>
             </div>
-            <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100 h-80 flex items-center justify-center">
-                <span class="text-slate-400">Tecnologia Invisalign</span>
+            <div class="rounded-2xl border-2 border-amber-500/30 overflow-hidden shadow-2xl h-[400px]">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=80" alt="Invisalign" class="h-full w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTÉTICA DENTAL -->
+    <section id="estetica" class="py-20 bg-white">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
+            <div class="rounded-2xl border-2 border-amber-500/30 overflow-hidden shadow-xl h-[400px]">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80" alt="Consultório odontológico moderno" class="h-full w-full object-cover">
+            </div>
+            <div>
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-600">Harmonia &amp; Naturalidade</span>
+                <h2 class="mt-5 font-serif text-3xl leading-tight text-slate-900 sm:text-4xl">
+                    Estética dental com naturalidade.
+                </h2>
+                <p class="mt-6 leading-relaxed text-slate-600">
+                    A estética do sorriso começa com uma avaliação individual e um planejamento pensado para cada paciente. O objetivo é valorizar características naturais e buscar harmonia de acordo com cada caso.
+                </p>
+                <a href="https://wa.me/5519997041629" target="_blank" class="mt-8 inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-xl font-semibold transition">
+                    Agendar Avaliação Estética
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILARES DE ATENDIMENTO -->
+    <section class="py-20 bg-slate-100">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <div class="max-w-2xl">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-600">Pilares de Atendimento</span>
+                <h2 class="mt-5 font-serif text-3xl leading-tight text-slate-900 sm:text-4xl">
+                    Um atendimento pensado em cada detalhe.
+                </h2>
+            </div>
+            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-sm">
+                    <span class="block font-serif text-sm text-amber-600 font-bold">01</span>
+                    <h3 class="mt-2 text-lg text-slate-900 font-semibold">Atendimento personalizado</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-slate-600">Um olhar individual para cada paciente, respeitando suas expectativas e necessidades.</p>
+                </article>
+                <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-sm">
+                    <span class="block font-serif text-sm text-amber-600 font-bold">02</span>
+                    <h3 class="mt-2 text-lg text-slate-900 font-semibold">Planejamento individual</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-slate-600">Cada etapa é planejada considerando as características e objetivos de cada paciente.</p>
+                </article>
+                <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-sm">
+                    <span class="block font-serif text-sm text-amber-600 font-bold">03</span>
+                    <h3 class="mt-2 text-lg text-slate-900 font-semibold">Foco em estética dental</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-slate-600">Abordagem voltada à harmonia e naturalidade do sorriso.</p>
+                </article>
+                <article class="rounded-xl border border-slate-200 bg-white p-7 shadow-sm">
+                    <span class="block font-serif text-sm text-amber-600 font-bold">04</span>
+                    <h3 class="mt-2 text-lg text-slate-900 font-semibold">Atuação com Invisalign</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-slate-600">Planejamento com alinhadores transparentes de acordo com indicação clínica.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
+            <div class="rounded-2xl border-2 border-amber-500/30 overflow-hidden shadow-xl h-[400px]">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1000&q=80" alt="Dra. Vanessa Forato Ferraz" class="h-full w-full object-cover">
+            </div>
+            <div>
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-600">Conheça a Profissional</span>
+                <h2 class="mt-5 font-serif text-3xl leading-tight text-slate-900 sm:text-4xl">
+                    Dra. Vanessa Forato Ferraz
+                </h2>
+                <p class="mt-6 leading-relaxed text-slate-600">
+                    Cirurgiã-dentista com atuação em Invisalign e estética dental, dedicada a oferecer um atendimento personalizado e cuidadoso.
+                </p>
+                <p class="mt-4 leading-relaxed text-slate-600">
+                    A proposta é unir escuta, planejamento, tecnologia e atenção individual em cada atendimento.
+                </p>
+                <div class="mt-8 grid max-w-md gap-4 sm:grid-cols-2">
+                    <div class="rounded-lg border border-slate-200 bg-slate-50 px-5 py-4">
+                        <span class="block font-serif text-xl text-slate-900">Invisalign</span>
+                        <span class="text-xs tracking-[0.18em] uppercase text-slate-500">Doctor</span>
+                    </div>
+                    <div class="rounded-lg border border-slate-200 bg-slate-50 px-5 py-4">
+                        <span class="block font-serif text-xl text-slate-900">Socorro - SP</span>
+                        <span class="text-xs tracking-[0.18em] uppercase text-slate-500">Atendimento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS / AVALIAÇÕES -->
+    <section id="avaliacoes" class="py-20 bg-[#12232E] text-white">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+            <div class="flex flex-wrap items-end justify-between gap-8">
+                <div>
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-500">Depoimentos</span>
+                    <h2 class="mt-5 font-serif text-3xl leading-tight sm:text-4xl">O que nossos pacientes dizem</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="font-serif text-5xl text-amber-500">5,0</span>
+                    <div>
+                        <div class="text-amber-500">★★★★★</div>
+                        <p class="mt-1 text-sm text-white/60">20 avaliações no Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 grid gap-6 lg:grid-cols-3">
+                <blockquote class="rounded-xl border border-white/10 bg-white/5 p-7">
+                    <div class="text-amber-500">★★★★★</div>
+                    <p class="mt-5 leading-relaxed text-white/85">&ldquo;Ao conhecer a Dra. Vanessa me surpreendi com o capricho e na excelência com resultado.&rdquo;</p>
+                    <footer class="mt-6 border-t border-white/10 pt-4">
+                        <span class="block text-sm font-semibold">Paciente Verificado</span>
+                        <span class="text-xs uppercase text-amber-500">Google Reviews</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="rounded-xl border border-white/10 bg-white/5 p-7">
+                    <div class="text-amber-500">★★★★★</div>
+                    <p class="mt-5 leading-relaxed text-white/85">&ldquo;Excelente profissional, muito atenciosa ela e sua auxiliar, consultório moderno com equipamentos de última geração, recomendo!&rdquo;</p>
+                    <footer class="mt-6 border-t border-white/10 pt-4">
+                        <span class="block text-sm font-semibold">Erik Azevedo</span>
+                        <span class="text-xs uppercase text-amber-500">Google Reviews</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="rounded-xl border border-white/10 bg-white/5 p-7">
+                    <div class="text-amber-500">★★★★★</div>
+                    <p class="mt-5 leading-relaxed text-white/85">&ldquo;Dra. Vanessa é uma profissional excelente! Muito atenciosa, cuidadosa e competente. Atendimento humanizado e de muita qualidade. Recomendo!&rdquo;</p>
+                    <footer class="mt-6 border-t border-white/10 pt-4">
+                        <span class="block text-sm font-semibold">Paula Miamoto</span>
+                        <span class="text-xs uppercase text-amber-500">Google Reviews</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="py-20 bg-white">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
+            <div>
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-600">Onde Estamos</span>
+                <h2 class="mt-5 font-serif text-3xl leading-tight text-slate-900 sm:text-4xl">Atendimento em Socorro - SP</h2>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-start gap-4 rounded-lg border border-slate-200 bg-slate-50 p-5">
+                        <div>
+                            <span class="block text-xs uppercase text-slate-500">Endereço</span>
+                            <p class="mt-1 text-sm text-slate-900">Rua Sebastião Teixeira de, R. Padre Francisco Paiva, 22, Socorro - SP, 13960-000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 rounded-lg border border-slate-200 bg-slate-50 p-5">
+                        <div>
+                            <span class="block text-xs uppercase text-slate-500">Telefone / WhatsApp</span>
+                            <p class="mt-1 text-sm text-slate-900">(19) 99704-1629</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Padre+Francisco+Paiva+22+Socorro+SP" target="_blank" class="mt-8 inline-block border border-slate-300 hover:bg-slate-100 px-6 py-3 rounded-xl font-semibold transition text-slate-900">
+                    Como Chegar →
+                </a>
+            </div>
+            <div class="rounded-2xl border-2 border-amber-500/30 overflow-hidden shadow-xl h-[350px]">
+                <iframe title="Mapa do consultório" src="https://www.google.com/maps?q=Rua%20Padre%20Francisco%20Paiva%2022%20Socorro%20SP&output=embed" loading="lazy" class="h-full w-full border-0"></iframe>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-900 text-white py-14 border-t border-slate-800">
+    <footer class="bg-[#12232E] text-white py-14 border-t border-white/10">
         <div class="mx-auto max-w-7xl px-5 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
             <div>
                 <p class="font-serif text-lg">Dra. Vanessa Forato Ferraz</p>
-                <p class="text-slate-400 text-xs mt-1">Invisalign e Estética Dental em Socorro - SP</p>
+                <p class="text-white/60 text-xs mt-1">Invisalign e Estética Dental em Socorro - SP.</p>
             </div>
-            <p class="text-xs text-slate-500">&copy; 2026 Dra. Vanessa Forato Ferraz. Todos os direitos reservados.</p>
+            <p class="text-xs text-white/50">&copy; 2026 Dra. Vanessa Forato Ferraz. Todos os direitos reservados. Desenvolvido por LH Soludev.</p>
         </div>
     </footer>
 
